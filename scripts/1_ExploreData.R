@@ -9,6 +9,7 @@ dim(dat.spp)
 summary(dat.spp)
 
 library(ggplot2)
+png("../WORKING/Family_Histo.png")
 ggplot(data=dat.spp) +
   geom_bar(aes(x=as.factor(family)))
-
+dev.off()
